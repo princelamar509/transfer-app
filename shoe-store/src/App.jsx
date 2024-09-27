@@ -22,9 +22,6 @@ useEffect(() => {
 
   return () => clearTimeout(timer);
   });
-
-
-
   const PrivateRoute = ({ children }) => {
     if (!isAuthenticated) {
       return <Navigate to="/signin" /> ;
@@ -32,9 +29,7 @@ useEffect(() => {
     }else{
       return children;
     }
-    
   };
-
   return (
     <Router>
       <div className="App">
@@ -44,6 +39,7 @@ useEffect(() => {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<LoginForm setIsAuthenticated={setIsAuthenticated} />} />
           <Route path="/signup" element={<SignUpForm />} />
+          <Route path="*" element={<Navigate to="/" />} />
           <Route
             path="/transfer"
             element={
