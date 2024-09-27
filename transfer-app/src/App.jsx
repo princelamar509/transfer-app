@@ -8,6 +8,7 @@ import SignUpForm from './components/SignUpForm';
 import TransferForm from './components/TransferForm';
 import './App.css';
 import Footer from './components/Footer';
+import { HashRouter as Router } from 'react-router-dom';
 
 
 const App = () => {
