@@ -2,32 +2,44 @@
 .hero {
   position: relative;
   display: flex;
-background: linear-gradient(45deg, rgb(27, 34, 38), rgba(0, 0, 0, 0.914), rgb(27, 34, 38));
-  height: 60vh;
-  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+  background: linear-gradient(45deg, rgb(27, 34, 38), rgba(0, 0, 0, 0.914), rgb(27, 34, 38));
+  height: 60vh;
+  width: 100%;
   color: whitesmoke;
-line-height: 1.5;
-  backdrop-filter: blur(10px);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 1.5;
 
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
 .hero-subheading {
-
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
+}
+
+.hero-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   z-index: 1;
+  color: rgb(5, 142, 254);
 }
 
 .hero-button {
@@ -39,10 +51,12 @@ border-radius: 20px;
   cursor: pointer;
   backdrop-filter: blur(10px);
   color: #fff;
+  margin-right: 20px;
   font-size: 1.2rem;
   font-weight: bold;
   max-width: 500px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
 }
 
 .hero-button:hover {
@@ -54,17 +68,17 @@ border-radius: 20px;
 
 .dowload-button {
   margin-top: 20px;
-  margin-left: 20px;
   padding: 10px 20px;
-  max-width: 500px;
   background-color: rgb(2, 101, 241);
+  border: oldlace 1px solid;
   border-radius: 4px;
   cursor: pointer;
   backdrop-filter: blur(10px);
-border: oldlace 1px solid;
   color: #fff;
+  margin-left: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+  max-width: 500px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -87,20 +101,8 @@ border: oldlace 1px solid;
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  z-index: 1;
+  color: whitesmoke;
 }
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-
 
 .exchange-rate-form-section {
   display: flex;
@@ -115,19 +117,10 @@ h2 {
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  border-radius: 10px;
   color: rgb(2, 101, 241);
 }
 
-.hero-heading {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  z-index: 1;
-  color: rgb(5, 142, 254);
-}
+
 .exchange-rate-left {
   flex: 1;
   display: flex;
@@ -144,7 +137,6 @@ h2 {
   object-fit: cover;
   border-radius: 8px;
   margin: 0 20px;
-  object-fit: cover;
   object-position:start;
 
 }
@@ -153,15 +145,12 @@ h2 {
   flex: 1;
   padding: 20px;
   background: rgb(27, 34, 38); 
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
   border-radius: 10px;
   color: whitesmoke;
   
 }
 .exchange-rate-form .form-group {
   margin-bottom: 15px;
-  border-radius: 0px;
   margin: auto;
   padding: 10px;
   width: 100%;
@@ -172,7 +161,7 @@ h2 {
 .exchange-rate-form label {
   display: block;
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -187,8 +176,8 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.781);
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 18px;
   background: rgba(255, 255, 255, 0.927);
   backdrop-filter: blur(5px);
   color: rgb(2, 101, 241);
@@ -199,7 +188,7 @@ h2 {
 
 .info-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid with minimum and maximum sizes */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   gap: 20px;
   padding: 40px;
   background-color: #f9f9f9;
@@ -261,21 +250,16 @@ h2 {
 }
 
 .country-box {
-  flex: 1 0 30%;
-  margin: 10px;
-  padding: 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1 0 30%;
+  padding: 20px;
   text-align: center;
-  border-radius: 8px;
   background: rgb(27, 34, 38);
   color: whitesmoke;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.5;
+  border-radius: 8px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   backdrop-filter: blur(10px);
 

@@ -6,7 +6,6 @@ position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  z-index: 1000;
   background: rgb(27, 34, 38);
 margin-bottom: 20px;
 }
@@ -38,8 +37,8 @@ margin-bottom: 20px;
 
 
 .logo img {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   margin-right: 10px;
   border-radius: 50%;
   transition: transform 0.3s ease;

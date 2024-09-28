@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaExchangeAlt, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
-
 import './Navbar.css';
 import logo from '../assets/logo.webp';
 
