@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight} from 'react-icons/fa';
+import './TransferForm.css';
 const TransferDetails = ({ nextStep, prevStep }) => {
   const [sendAmount, setSendAmount] = useState('');
   const [receiveAmount, setReceiveAmount] = useState('');

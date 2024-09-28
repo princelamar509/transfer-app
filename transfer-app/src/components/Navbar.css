@@ -2,10 +2,6 @@
 /* Navbar Styles */
 .navbar {
 position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,8 +9,6 @@ position: relative;
   z-index: 1000;
   background: rgb(27, 34, 38);
 margin-bottom: 20px;
-padding: 10px 20px;
-
 }
 
 
@@ -27,16 +21,13 @@ padding: 10px 20px;
   color: #0741e1; 
   letter-spacing: 2px;
   font-weight: bolder;
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 10px rgb(62, 29, 29);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 10px rgb(29, 51, 62);
 }
-
-
-
 
 
 .logo-span {
   color: #ffffff; 
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 10px rgb(62, 29, 29);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1),  0 10px rgb(29, 51, 62);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
@@ -44,27 +35,20 @@ padding: 10px 20px;
   font-weight: bolder;
 }
 
+
+
 .logo img {
+  width: 180px;
   height: 180px;
   margin-right: 10px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.1), 0 10px rgb(71, 70, 70);
 }
 .logo img:hover {
   transform: scale(1.1);
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff; 
-  margin-left: 10px;
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 10px rgb(62, 29, 29);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
 
 .menu-icon {

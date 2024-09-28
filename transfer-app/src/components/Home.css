@@ -12,7 +12,6 @@ background: linear-gradient(45deg, rgb(27, 34, 38), rgba(0, 0, 0, 0.914), rgb(27
   color: whitesmoke;
 line-height: 1.5;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -35,16 +34,14 @@ border-radius: 20px;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: rgb(2, 101, 241);
-  border: none;
+  border: oldlace 1px solid;
   border-radius: 4px;
   cursor: pointer;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(1, 110, 252, 0.471);
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
   max-width: 500px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -64,7 +61,7 @@ border-radius: 20px;
   border-radius: 4px;
   cursor: pointer;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(1, 110, 252, 0.474);
+border: oldlace 1px solid;
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
@@ -110,10 +107,7 @@ border-radius: 20px;
   justify-content: space-between;
   padding: 50px 20px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-
-
 }
 h2 {
   margin-bottom: 20px;
@@ -149,11 +143,9 @@ h2 {
   display: block;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(248, 243, 243, 0.1);
   margin: 0 20px;
   object-fit: cover;
   object-position:start;
- 
 
 }
 
@@ -163,7 +155,6 @@ h2 {
   background: rgb(27, 34, 38); 
   backdrop-filter: blur(10px);
   border-radius: 8px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   color: whitesmoke;
   
@@ -218,7 +209,7 @@ h2 {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.601);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center;
 }
@@ -234,13 +225,13 @@ h2 {
   justify-content: center;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: rgb(5, 142, 254);
+  color: rgb(2, 101, 241);
 }
 
 .info-box h3 svg {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #007bff; 
+  color: rgb(2, 101, 241)f; 
 }
 
 .info-box p {
@@ -266,7 +257,6 @@ h2 {
   margin-top: 20px;
   padding: 20px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
@@ -285,10 +275,10 @@ h2 {
   color: whitesmoke;
   font-size: 1rem;
   font-weight: bold;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -297,7 +287,6 @@ h2 {
   max-height: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(252, 248, 248, 0.447);
 }
 
 
@@ -317,7 +306,8 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.439);
+  font-size: large;
 }
 
 .see-all-button:hover {
@@ -349,7 +339,6 @@ h2 {
     justify-content: space-between;
     padding: 50px 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: block;
   
@@ -388,7 +377,6 @@ h2 {
     word-wrap: break-word;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
   
