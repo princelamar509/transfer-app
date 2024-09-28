@@ -75,7 +75,7 @@ const Home = () => {
         <div className="hero-text">
           <h1 className="hero-heading">Send Money Instantly</h1>
           <p className="hero-subheading">Fast, secure, and convenient money transfers worldwide.</p>
-          <button className="hero-button"  onClick={() => alert('Get Started')}>Get Started</button>
+          <button className="hero-button"  onClick={() => alert('Get Started')}>Get Started</button> <br/>
           <button className="dowload-button" onClickCapture={() => window.open(' https://www.apple.com/app-store/')}>Download App</button>
         </div>
       

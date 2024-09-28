@@ -50,10 +50,9 @@ white-space: wrap;
   cursor: pointer;
   backdrop-filter: blur(10px);
   color: #fff;
-  margin-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
- max-width: 500px;
+ max-width: 50%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
 }
@@ -75,10 +74,8 @@ white-space: wrap;
   cursor: pointer;
   backdrop-filter: blur(10px);
   color: #fff;
-  margin-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
- max-width: 50%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
