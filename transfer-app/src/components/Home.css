@@ -41,6 +41,7 @@ white-space: wrap;
 }
 
 .hero-button {
+  display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: rgb(2, 101, 241);
@@ -52,7 +53,7 @@ white-space: wrap;
   margin-left: 20px;
   font-size: 1.2rem;
   font-weight: bold;
-  max-width: 500px;
+ max-width: 500px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
 }
@@ -65,6 +66,7 @@ white-space: wrap;
 
 
 .dowload-button {
+  display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: rgb(2, 101, 241);
@@ -76,7 +78,7 @@ white-space: wrap;
   margin-left: 20px;
   font-size: 1.2rem;
   font-weight: bold;
-  max-width: 500px;
+ max-width: 50%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -317,7 +319,7 @@ h2 {
   box-shadow: 0 14px 20px rgba(35, 51, 101, 0.367);
   font-size: 1.2rem;
   font-weight: bold;
-  max-width: 500px;
+
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
