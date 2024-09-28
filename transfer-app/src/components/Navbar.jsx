@@ -33,7 +33,7 @@ const Navbar = () => {
 
 <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
   <li><Link to="/" onClick={toggleMenu}> <FaHome style={{ marginRight: "8px" }} />Home</Link></li>
-  <li><Link to="/transfer" onClick={toggleMenu}> <FaExchangeAlt style={{ marginRight: "8px" }} />Transfer</Link></li> 
+  <li><Link to="/transfer" onClick={toggleMenu}> <FaExchangeAlt style={{ marginRight: "8px" }} />Transfer</Link></li> <br/>
   <li className="spacer"></li>
   <li><Link to="/signin" onClick={toggleMenu}><FaSignInAlt style={{ marginRight: "8px", marginBottom: "5px"}} />Sign In</Link></li>
   <li><Link to="/signup" onClick={toggleMenu}><FaUserPlus style={{ marginRight: "8px" }} />Sign Up</Link></li>
