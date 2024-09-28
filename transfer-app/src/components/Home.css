@@ -307,15 +307,16 @@ h2 {
 .hero-button {
   margin-top: 20px;
   padding: 10px 20px;
-  max-width: 500px;
   background-color: rgb(2, 101, 241);
+  border: oldlace 1px solid;
   border-radius: 4px;
   cursor: pointer;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(1, 110, 252, 0.446);
   color: #fff;
+  box-shadow: 0 14px 20px rgba(35, 51, 101, 0.367);
   font-size: 1.2rem;
   font-weight: bold;
+  max-width: 500px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
