@@ -317,7 +317,8 @@ overflow: hidden;
   box-shadow: 0 14px 20px rgba(35, 51, 101, 0.367);
   font-size: 1.2rem;
   font-weight: bold;
-
+max-width: fit-content;
+white-space: nowrap;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
