@@ -27,10 +27,12 @@
 }
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 90px !important;
+  height: 90px !important;
   margin-right: 10px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.3s ease;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.1), 0 10px rgb(71, 70, 70);
 }
@@ -127,22 +129,4 @@
 }
 
 
-.hero-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  max-width: 500px;
-  background-color: rgb(2, 101, 241);
-  border-radius: 4px;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(1, 110, 252, 0.281);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
 
-.hero-button:hover {
-  background-color: #fff;
-  color: #000;
-}

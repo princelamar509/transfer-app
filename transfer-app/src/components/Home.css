@@ -303,6 +303,32 @@ h2 {
   
   }
 
+
+.hero-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  max-width: 500px;
+  background-color: rgb(2, 101, 241);
+  border-radius: 4px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(1, 110, 252, 0.446);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow:none;
+}
+
+.hero-button:focus {
+  outline: none;
+}
+
   .hero {
     padding: 20px;
     text-align: center;
