@@ -115,7 +115,7 @@ const TransferDetails = ({ nextStep, prevStep }) => {
 
       <div className="button-group">
       <button type="button" className="back-btn" onClick={prevStep}>
-          <FaArrowLeft style={{ marginRight: '8px' }} />
+          <FaArrowLeft style={{ marginRight: '8px', color: 'orange' }} />
           Go Back
         </button>
 

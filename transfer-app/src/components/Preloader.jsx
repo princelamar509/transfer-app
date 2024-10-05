@@ -59,6 +59,7 @@ const MoneyLoadingSpinner = () => {
           fontSize="60"
           fill="#00A86B"
           fontFamily="Arial, sans-serif"
+          fontWeight="bold"
         >
           $
         </text>
@@ -71,6 +72,7 @@ const MoneyLoadingSpinner = () => {
           to="360 50 50"
           dur="1.5s"
           repeatCount="indefinite"
+          
         />
       </svg>
     </div>
