@@ -19,13 +19,13 @@ const TransferForm = () => {
     <div className="transfer-form-container">
       <h2>Transfer Money</h2>
       {step === 1 && (
-        <SenderReceiverInfo nextStep={nextStep} />
+        <SenderReceiverInfo nextStep={nextStep} required/>
       )}
       {step === 2 && (
-        <TransferDetails nextStep={nextStep} prevStep={prevStep} />
+        <TransferDetails nextStep={nextStep} prevStep={prevStep}  required/>
       )}
       {step === 3 && (
-        <PaymentInfo prevStep={prevStep} onSubmit={handleSubmit} />
+        <PaymentInfo prevStep={prevStep} onSubmit={handleSubmit} required/>
       )}
     </div>
   );

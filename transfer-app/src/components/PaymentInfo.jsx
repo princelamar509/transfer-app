@@ -15,7 +15,7 @@ const PaymentInfo = ({ prevStep, onSubmit }) => {
       creditCard,
       expirationDate,
       cvv,
-      
+
     });
   };
 
@@ -24,7 +24,7 @@ const PaymentInfo = ({ prevStep, onSubmit }) => {
       <div className="form-section">
         <h3>Payment Information</h3>
         <div className="form-group">
-          <label htmlFor="nameOnCard">Name on Card:</label>
+          <label htmlFor="nameOnCard" >Name on Card:</label>
           <input
             type="text"
             id="nameOnCard"
@@ -56,11 +56,12 @@ const PaymentInfo = ({ prevStep, onSubmit }) => {
         <div className="form-group">
           <label htmlFor="cvv">CVV:</label>
           <input
+       
             type="text"
             id="cvv"
             value={cvv}
             onChange={(e) => setCvv(e.target.value)}
-            required
+           
           />
         </div>
       </div>
@@ -69,7 +70,7 @@ const PaymentInfo = ({ prevStep, onSubmit }) => {
           <FaArrowLeft style={{ marginRight: '8px' }} />
           Go Back
         </button>
-      <button type="submit" onClick={handleSubmit}>
+      <button type="submit"  onClick={handleSubmit}>
           <FaCheckCircle style={{ marginRight: '8px' }} />
           Submit
         </button>

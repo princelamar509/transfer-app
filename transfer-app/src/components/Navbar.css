@@ -27,14 +27,14 @@ margin-bottom: 20px;
 }
 
 .logo img {
-  width: 90px !important;
-  height: 90px !important;
+  width: 50px !important;
+  height: auto !important;
   margin-right: 10px;
   border-radius: 50%;
   object-fit: cover;
+  transform: scale(1.2);
   object-position: center;
   transition: transform 0.3s ease;
-  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.1), 0 10px rgb(71, 70, 70);
 }
 
 
