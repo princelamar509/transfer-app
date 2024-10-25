@@ -1,16 +1,22 @@
 import React, { useState} from 'react';
 import { FaUserPlus, FaHeadset, FaBolt, FaCheckCircle } from 'react-icons/fa';
 import './Home.css';
+import { useNavigate} from 'react-router-dom';
+
+
+
 
 
 const Home = () => {
   const [sendAmount, setSendAmount] = useState('');
   const [receiveAmount, setReceiveAmount] = useState('');
-
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [showAllCountries, setShowAllCountries] = useState(false);
+  const navigate = useNavigate();
 
-
+  const handleNavigate = () => {
+    navigate('/signup');
+  }
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!sendAmount || isNaN(sendAmount)) {
@@ -24,7 +30,7 @@ const Home = () => {
  
   };
 
-
+ 
   
   
   const countries = [
@@ -75,7 +81,7 @@ const Home = () => {
         <div className="hero-text">
           <h1 className="hero-heading">Send Money Instantly</h1>
           <p className="hero-subheading">Fast, secure, and convenient money transfers worldwide.</p>
-          <button className="hero-button"  onClick={() => alert('Get Started')}>Get Started</button> <br/>
+          <button className="hero-button" onClick={handleNavigate}>Get Started</button> <br/>
           <button className="dowload-button" onClickCapture={() => window.open(' https://www.apple.com/app-store/')}>Download App</button>
         </div>
       
