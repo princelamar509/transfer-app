@@ -9,7 +9,7 @@ const PaymentInfo = ({ prevStep, onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form submitted successfully!");
+    alert("Transfer has been sent successfully check your email for confirmation!");
     onSubmit({
       nameOnCard,
       creditCard,
