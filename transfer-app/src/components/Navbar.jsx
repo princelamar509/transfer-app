@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
-      <img src={logo} className="logo" alt="logo"  />
-      CASH<span className="logo-span">MEEE</span>
+       <img src={logo} className="logo" alt="logo"  /> 
+      CA$H<span className="logo-span">MEEE</span>
 
       </Link>
       
