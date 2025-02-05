@@ -1,0 +1,32 @@
+/* Initial state: Hidden & shifted left */
+.animate-section {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+  }
+  
+  /* When visible, move to position */
+  .animate-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .home {
+    animation: slideFromLeft 0.9s ease-in-out;
+  }
+  

@@ -3,8 +3,8 @@ import { FaUserPlus, FaHeadset, FaBolt, FaCheckCircle } from 'react-icons/fa';
 import './Home.css';
 import { useNavigate} from 'react-router-dom';
 
-
-
+import AnimatedSection from "./AnimatedSection";
+import Animated1 from "./Animated1";
 
 
 const Home = () => {
@@ -88,11 +88,15 @@ const Home = () => {
       </section>
 
       <section className="exchange-rate-form-section">
+      
         <div className="exchange-rate-left">
           <img src="https://www.bankrate.com/brp/2023/11/20014206/How-to-transfer-money-from-one-bank-to-another.jpg?auto=webp&optimize=high&crop=16:9" alt="Money Transfer" className="exchange-rate-image" />
         </div>
+      
         <div className="exchange-rate-right">
+        
           <h2>Exchange Rate</h2>
+
           <form className="exchange-rate-form">
             <div className="form-group">
               <label htmlFor="sendAmount">Send Amount!</label>
@@ -128,41 +132,49 @@ const Home = () => {
                 <option value="">Select Country</option>
                 {countries.map((country) => (
                   <option key={country.code} value={country.code}>
-                    {country.name} ({country.code}) - {country.rate} USD per 1 INR (1 USD = {country.rate} INR) 
+                    {country.name} ({country.code})  {/* - {country.rate} USD per 1 INR (1 USD = {country.rate} INR) TO DISPLAY RATE */}
                   </option>
                 ))}
               </select>
 
-
-
-
             </div>
           </form>
         </div>
-
-
+        
       </section>
-
+     
       <section className="info-section">
+      <Animated1>
       <div className="info-box">
+     
         <h3><FaUserPlus /> Easy to sign up</h3>
         <p>Link your debit card, verify your identity and be sending in minutes.</p>
+     
       </div>
+      </Animated1>
+      <AnimatedSection>
       <div className="info-box">
         <h3><FaHeadset /> 24/7 support</h3>
         <p>We are available to chat 24/7 if you need any help.</p>
       </div>
+      </AnimatedSection>
+      <AnimatedSection>
       <div className="info-box">
         <h3><FaBolt /> Fast & convenient money transfers</h3>
         <p>Skip the line and send money from your phone to your loved ones in seconds.</p>
       </div>
+       </AnimatedSection>
+      <AnimatedSection>
       <div className="info-box">
         <h3><FaCheckCircle /> Trusted and legitimate</h3>
         <p>Trusted by over 1 million users, money transfer is operated by Zepz and is authorized to transmit money in the US, Canada, the UK, and the EU.</p>
       </div>
+      </AnimatedSection>
     </section>
       <section className="countries-section">
-        <h2>Where you can send money</h2>
+       <Animated1>
+        <h2 className="countries-heading">Where you can send money</h2>
+        </Animated1>
         <div className="countries-grid">
           {countries.slice(0, showAllCountries ? countries.length : 6).map((country) => (
             <button 

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram,  faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const [showFAQ, setShowFAQ] = useState(false);
+  const [showFAQ, setShowFAQ] = useState(true);
 
   const toggleFAQ = () => {
     setShowFAQ(!showFAQ);
