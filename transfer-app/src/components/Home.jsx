@@ -4,7 +4,7 @@ import './Home.css';
 import { useNavigate} from 'react-router-dom';
 
 import AnimatedSection from "./AnimatedSection";
-import Animated1 from "./Animated1";
+
 
 
 const Home = () => {
@@ -81,8 +81,11 @@ const Home = () => {
         <div className="hero-text">
           <h1 className="hero-heading">Send Money Instantly</h1>
           <p className="hero-subheading">Fast, secure, and convenient money transfers worldwide.</p>
-          <button className="hero-button" onClick={handleNavigate}>Get Started</button> <br/>
-          <button className="dowload-button" onClickCapture={() => window.open(' https://www.apple.com/app-store/')}>Download App</button>
+       
+          <button className="hero-button" onClick={handleNavigate}>Get Started</button> 
+          
+          <button className='download-button' onClick={""}>Download App</button>
+        
         </div>
       
       </section>
@@ -144,14 +147,14 @@ const Home = () => {
       </section>
      
       <section className="info-section">
-      <Animated1>
+      <AnimatedSection>
       <div className="info-box">
      
         <h3><FaUserPlus /> Easy to sign up</h3>
         <p>Link your debit card, verify your identity and be sending in minutes.</p>
      
       </div>
-      </Animated1>
+      </AnimatedSection>
       <AnimatedSection>
       <div className="info-box">
         <h3><FaHeadset /> 24/7 support</h3>
@@ -172,9 +175,9 @@ const Home = () => {
       </AnimatedSection>
     </section>
       <section className="countries-section">
-       <Animated1>
+       <AnimatedSection>
         <h2 className="countries-heading">Where you can send money</h2>
-        </Animated1>
+        </AnimatedSection>
         <div className="countries-grid">
           {countries.slice(0, showAllCountries ? countries.length : 6).map((country) => (
             <button 
