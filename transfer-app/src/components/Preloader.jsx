@@ -8,8 +8,8 @@ const MoneyLoadingSpinner = () => {
         height="300"
         viewBox="0 0 100 100"
         fill="none"
-        stroke= "#0741e1"
-        strokeWidth="6"
+        stroke= "#000"
+        strokeWidth="3"
         xmlns="http://www.w3.org/2000/svg"
       >
 
@@ -18,7 +18,7 @@ const MoneyLoadingSpinner = () => {
           cy="50"
           r="45"
           stroke="#ffffff"
-          strokeWidth="6"
+          strokeWidth="3"
           strokeDasharray="382"
           strokeDashoffset="382"
           strokeLinecap="round"
@@ -36,7 +36,7 @@ const MoneyLoadingSpinner = () => {
           cx="50"
           cy="50"
           r="35"
-          stroke="#0741e1"
+          stroke="#000"
           strokeWidth="4"
           strokeDasharray="320"
           strokeDashoffset="320"
@@ -57,7 +57,7 @@ const MoneyLoadingSpinner = () => {
           textAnchor="middle"
           dy=".35em"
           fontSize="60"
-          fill="#00A86B"
+          fill="#ffcc00"
           fontFamily="Arial, sans-serif"
           fontWeight="bold"
         >
