@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginForm.css';
 
+
 const LoginForm = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -41,9 +42,13 @@ const LoginForm = ({ setIsAuthenticated }) => {
               required
             />
           </div>
+
           <button type="submit">Sign In</button>
           {error && <p className="error-message">{error}</p>}
         </form>
+        <div className="signup-link">
+            Don't have an account? <a href="/SignUp">Sign Up</a>
+          </div>
       </div>
     </div>
   );
