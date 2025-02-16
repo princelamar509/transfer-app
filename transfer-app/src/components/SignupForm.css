@@ -7,13 +7,13 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, rgb(27, 34, 38), rgba(0, 0, 0, 0.914), rgb(27, 34, 38));
+  background: linear-gradient(195deg, #000, #715e10,#0e0b00);
   background-size: cover;
 }
   
 
 .form-container {
-  background-color: rgb(27, 34, 38);
+  background-color: transparent;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 252, 252, 0.071);
@@ -42,7 +42,7 @@ h1 {
 
 label {
   font-size: 0.9rem;
-  color: #666;
+  color: #040404;
   margin-bottom: 5px;
 }
 
@@ -63,7 +63,7 @@ input:focus {
 }
 
 .btn {
-  background: rgb(0, 98, 255);
+  background: transparent;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -72,6 +72,7 @@ input:focus {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  border: solid 1px white;
 }
 
 .btn:hover {
@@ -82,13 +83,14 @@ input:focus {
 .signup-link {
   margin-top: 20px;
   font-size: 0.9rem;
-  color: #444;
+  color: #111010;
 }
 
 .signup-link a {
-  color: rgb(0, 98, 255);
+  color: rgb(249, 250, 251);
   text-decoration: none;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .signup-link a:hover {
