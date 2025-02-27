@@ -72,6 +72,10 @@ const Home = () => {
   };
    
 
+  const handleClick = () => {
+    window.location.href = 'https://play.google.com/store/apps?hl=en_US';
+  };
+  
 
 
 
@@ -84,8 +88,8 @@ const Home = () => {
        
           <button className="hero-button" onClick={handleNavigate}>Get Started</button> 
           
-          <button className='download-button' onClick={""}>Download App</button>
-        
+          <button className='download-button' onClick={handleClick}>Download App</button>
+         
         </div>
       
       </section>

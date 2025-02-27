@@ -14,10 +14,11 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
+
 useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, [2000]);
 
 
   return () => clearTimeout(timer);
